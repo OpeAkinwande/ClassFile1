@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+p{
+    padding-top: 16px;
+    line-height: 20px;
+}
+
+img{
+    width: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    height: 360px;
+    margin: 40px auto;
+    padding: 50px;
+}
+
+.grid-item1:hover{
+    background-color: rgb(186, 160, 192);
+}
+
+.grid-item2:hover{
+    background-color: rgb(209, 161, 29);
+}
+
+.grid-item3:hover{
+    background-color: rgb(52, 192, 162);
+}
+
+.grid-item4:hover{
+    background-color: rgb(224, 161, 196);
+}
+
+
+.grid-item1 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    padding-left: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.grid-item2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    padding-left: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.grid-item3 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    padding-left: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.grid-item4 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    padding-left: 100px;
+    color: rgb(5, 4, 29);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Desktop layout: 2 rows, 2 columns */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+/* Tablet layout: 2 rows, 2 columns */
+@media (min-width: 750px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    p{
+        font-size: 13px;
+    }
+}
+
+/* Mobile layout: 4 columns, 1 row */
+@media (max-width: 700px) {
+    .grid-container {
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .grid-item {
+        padding: 10px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
